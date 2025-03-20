@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介绍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: -50px auto 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+       .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+       .profile img:hover {
+            transform: scale(1.05);
+        }
+
+       .profile h2 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+       .profile p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+       .info-section {
+            margin-bottom: 40px;
+        }
+
+       .info-section h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #007BFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+       .info-section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+       .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+
+       .contact-info li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+       .contact-info li i {
+            margin-right: 15px;
+            color: #007BFF;
+            font-size: 1.3em;
+        }
+
+       .contact-info li a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+       .contact-info li a:hover {
+            color: #0056b3;
+        }
+
+       .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+       .photo-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+       .photo-gallery img:hover {
+            transform: scale(1.08);
+        }
+
+       .photo-gallery img:first-child {
+            grid-column: span 2;
+            height: 250px; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>我的个人介绍</h1>
+        <p>探索我的精彩世界</p>
+    </header>
+    <main>
+        <div class="profile">
+            <img src="ca6a74c30f84b1f355274469f951d6d.jpg" alt="个人照片">
+            <h2>王渊博</h2>
+            <p>职业：帅气大学生 | 所在地：河北石家庄</p>
+        </div>
+        <div class="info-section">
+            <h2>个人简介</h2>
+            <p>身为热爱自由的大学生，我像追光者般奔赴知识殿堂，热衷新技术新知识，努力提升自我。课余，摄影与旅行是我的挚友。我带着相机踏上旅途，定格山川湖海、人间烟火，用镜头捕捉美好，让生活满是诗意与惊喜 。</p>
+        </div>
+        <div class="info-section">
+            <h2>联系方式</h2>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-envelope"></i>邮箱：wyb@example.com</li>
+                <li><i class="fa-solid fa-phone"></i>电话：195****0601</li>
+                <li><i class="fa-brands fa-linkedin"></i>LinkedIn：<a href="#">王渊博</a></li>
+            </ul>
+        </div>
+        <div class="info-section">
+            <h2>我的照片</h2>
+            <div class="photo-gallery">
+                <img src="9c411c4323887fab84bae3a6bd3d7d4.jpg" alt="照片1">
+                <img src="2f769c87af35efeff04c20b2f9ee1b8.jpg" alt="照片2">
+                <img src="002506fad6c60b299dea92a6005ec4b.jpg" alt="照片3">
+                <img src="47a191c919980f947f92effc3116d51.jpg" alt="照片4">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>    
